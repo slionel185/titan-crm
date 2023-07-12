@@ -2,14 +2,12 @@ import { CheckCircle2, XCircle } from 'lucide-react'
 
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import Header from '@/components/Header'
 import openContactModal from '@/functions/openContactModal'
 
 export default function Pricing() {
     return (
         <div className='flex min-h-screen lg:h-screen flex-col bg-neutral-200'>
             <Navbar />
-            <Header content='Pricing' />
             <div className='flex h-full flex-col lg:flex-row gap-8 justify-center items-center p-12'>
                 <div id='online' className='card w-full max-w-xs p-4 rounded-md bg-neutral-200 text-primary items-center gap-2'>
                     <h1 className='font-black text-3xl'>Online</h1>

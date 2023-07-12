@@ -1,12 +1,10 @@
 import Navbar from '@/components/Navbar'
-import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export default function Contact() {
     return (
         <div className='min-h-screen flex flex-col'>
             <Navbar />
-            <Header content='Contact' />
             <div className='h-full hero bg-neutral-200'>
                 <div className='hero-content flex-col w-full'>
                     <div className='card rounded-md flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100'>
