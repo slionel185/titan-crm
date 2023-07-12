@@ -5,9 +5,9 @@ import openContactModal from '@/functions/openContactModal'
 
 export default function Home() {
     return (
-        <div className={`flex h-screen flex-col bg-neutral-200`}>
+        <div className={`flex xl:h-screen flex-col bg-neutral-200`}>
             <Navbar />
-            <div className="hero min-h-full" style={{backgroundImage: 'url(/Hero.jpg)'}}>
+            <div className="hero min-h-screen xl:min-h-full" style={{backgroundImage: 'url(/Hero.jpg)'}}>
                 <div className="hero-overlay bg-opacity-80"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-lg">
