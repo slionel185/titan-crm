@@ -1,65 +1,96 @@
+import { CheckCircle2, XCircle } from 'lucide-react'
+
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import openContactModal from '@/functions/openContactModal'
 
 export default function Pricing() {
     return (
-        <div className='flex flex-col bg-neutral-200'>
+        <div className='flex lg:h-screen flex-col bg-neutral-200'>
             <Navbar />
             <Header content='Pricing' />
-            <div className='flex flex-col items-center py-12 px-12'>
-                <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 w-full gap-12'>
-                    <div id='online' className='flex flex-col bg-base-100 p-4 rounded-md w-full shadow-lg'>
-                        <h1 className='uppercase text-2xl font-extrabold text-neutral-200 text-left md:text-center'>Online</h1>
-                        <h1 className='text-xl font-bold'>Location</h1>
-                        <div className='divider my-0' />
-                        <div className='text-lg font-semibold'>
-                            <h1>0 Locations</h1>
-                            <h1>2 Trainers</h1>
-                            <h1>20 Clients per trainer*</h1>
-                            <h1>7 Workouts per client</h1>
-                            <h1>1 Meal Plan per client</h1>
+            <div className='flex h-full flex-col lg:flex-row gap-8 justify-center items-center p-12'>
+                <div id='online' className='card w-full max-w-xs p-4 rounded-md bg-neutral-200 text-primary items-center gap-2'>
+                    <h1 className='font-black text-3xl'>Online</h1>
+                    <h1 className='font-light text-4xl'>$100<span className='font-extrabold text-2xl'>/mo</span></h1>
+                    <div className='w-full flex flex-col py-4 gap-2'>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Up to 2 Trainers</h1>
                         </div>
-                        <h1 className='text-xl font-bold mt-4'>Website</h1>
-                        <div className='divider my-0' />
-                        <div className='text-lg font-semibold'>
-                            <h1>Customized to your brand</h1>
-                            <h1></h1>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Up to 100 Clients</h1>
                         </div>
-                    </div>
-                    <div id='online' className='flex flex-col bg-base-100 p-6 rounded-md w-full shadow-lg'>
-                        <h1 className='uppercase text-2xl font-extrabold text-neutral-200 text-left md:text-center'>Startup</h1>
-                        <div className='divider' />
-                        <div className='text-lg font-semibold'>
-                            <h1>1 Location</h1>
-                            <h1>10 Trainers</h1>
-                            <h1>20 Clients per Trainer*</h1>
-                            <h1>7 Workouts per Client</h1>
-                            <h1>1 Meal Plan per Client</h1>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Brand specific Website</h1>
+                        </div>
+                        <div className='flex gap-4 items-center'>
+                            <XCircle className='text-red-600' />
+                            <h1 className='text-xl'>Unlimited revisions</h1>
+                        </div>
+                        <div className='flex gap-4 items-center'>
+                            <XCircle className='text-red-600' />
+                            <h1 className='text-xl'>Locations</h1>
                         </div>
                     </div>
-                    <div id='online' className='flex flex-col bg-base-100 p-6 rounded-md w-full shadow-lg'>
-                        <h1 className='uppercase text-2xl font-extrabold text-neutral-200 text-left md:text-center'>Professional</h1>
-                        <div className='divider' />
-                        <div className='text-lg font-semibold'>
-                            <h1>3 Locations</h1>
-                            <h1>Unlimited Trainers</h1>
-                            <h1>100 Clients per Trainer*</h1>
-                            <h1>Unlimited Workouts per Client</h1>
-                            <h1>Unlimited Meal Plans per Client</h1>
+                    <button onClick={openContactModal} className='btn btn-primary normal-case'>Get Started!</button>
+                </div>
+                <div id='startup' className='card w-full max-w-xs p-4 rounded-md bg-neutral-200 text-primary items-center gap-2'>
+                <h1 className='font-black text-3xl'>Professional</h1>
+                    <h1 className='font-light text-4xl'>$500<span className='font-extrabold text-2xl'>/mo</span></h1>
+                    <div className='w-full flex flex-col py-4 gap-2'>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Up to 8 Trainers</h1>
+                        </div>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Up to 1000 Clients</h1>
+                        </div>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Customized Website</h1>
+                        </div>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Dedicated Developer</h1>
+                        </div>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Up to 2 Locations</h1>
                         </div>
                     </div>
-                    <div id='online' className='flex flex-col bg-base-100 p-6 rounded-md w-full shadow-lg'>
-                        <h1 className='uppercase text-2xl font-extrabold text-neutral-200 text-left md:text-center'>Enterprise</h1>
-                        <div className='divider' />
-                        <div className='text-lg font-semibold'>
-                            <h1>0 Locations</h1>
-                            <h1>2 Trainers</h1>
-                            <h1>20 Clients per Trainer*</h1>
-                            <h1>7 Workouts per Client</h1>
-                            <h1>1 Meal Plan per Client</h1>
+                    <button onClick={openContactModal} className='btn btn-primary normal-case'>Get Started!</button>
+                </div>
+                <div id='enterprise' className='card w-full max-w-xs p-4 rounded-md bg-neutral-200 text-primary items-center gap-2'>
+                <h1 className='font-black text-3xl'>Enterprise</h1>
+                    <h1 className='font-light text-4xl'>Contact</h1>
+                    <div className='w-full flex flex-col py-4 gap-2'>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Unlimited Trainers</h1>
+                        </div>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Unlimited Clients</h1>
+                        </div>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Customized Website</h1>
+                        </div>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Developer Team</h1>
+                        </div>
+                        <div className='flex gap-4 items-center'>
+                            <CheckCircle2 className='text-success' />
+                            <h1 className='text-xl'>Unlimited Locations</h1>
                         </div>
                     </div>
+                    <button onClick={openContactModal} className='btn btn-primary normal-case'>Contact me!</button>
                 </div>
             </div>
             <Footer />

@@ -35,7 +35,7 @@ export default function Contact() {
                                 </label>
                                 <input className='input input-bordered' type='text' placeholder='Email' />
                             </div>
-                            <button className='btn btn-primary normal-case'>Submit</button>
+                            <button className='btn btn-primary normal-case mt-2'>Submit</button>
                         </div>
                     </div>
                 </div>
