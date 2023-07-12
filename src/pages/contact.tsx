@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 
 export default function Contact() {
     return (
-        <div className='h-screen flex flex-col'>
+        <div className='xl:h-screen flex flex-col'>
             <Navbar />
             <Header content='Contact' />
             <div className='h-full hero bg-neutral-200'>
