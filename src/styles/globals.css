@@ -7,11 +7,11 @@
 }
 
 @supports (-webkit-touch-callout: none) {
-    .h-screen {
+  .h-screen {
       height: -webkit-fill-available;
-    }
-  
-    .min-h-screen {
-      height: -webkit-fill-available;
-    }
   }
+
+  .min-h-screen {
+      height: -webkit-fill-available;
+  }
+}
