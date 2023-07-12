@@ -12,7 +12,7 @@ export default function Services() {
                     <div className='hero-content flex-col lg:flex-row-reverse gap-10 text-neutral-content'>
                         <div className='max-w-4xl'>
                             <h1 className='text-3xl lg:text-5xl font-bold'>Communications</h1>
-                            <p className='py-6'>Our tool is designed to communicate with current members and potential prospects, making it easy to keep everyone in the loop. Whether you're looking to stay connected with customers or cultivate new leads, Titan CRM is the perfect solution.</p>
+                            <p className='py-6'>Our tool is designed to communicate with current members and potential prospects, making it easy to keep everyone in the loop. Whether you&apos;re looking to stay connected with customers or cultivate new leads, Titan CRM is the perfect solution.</p>
                             <button onClick={openContactModal} className='btn lg:btn-outline'>Learn More</button>
                         </div>
                     </div>
@@ -45,7 +45,7 @@ export default function Services() {
                     <div className='hero-content flex-col lg:flex-row-reverse gap-10 text-neutral-content'>
                         <div className='max-w-4xl lg:text-right'>
                             <h1 className='text-3xl lg:text-5xl font-bold'>Reporting</h1>
-                            <p className='py-6'>Without data, you can't know how your customers are interacting with your brand. Titan is a reporting service that gives you the data you need to improve your CRM performance. Titan makes it easy to see what's working and what needs improvement. With our service, you can make data-driven decisions that improve your customer relationships. </p>
+                            <p className='py-6'>Without data, you can&apos;t know how your customers are interacting with your brand. Titan is a reporting service that gives you the data you need to improve your CRM performance. Titan makes it easy to see what&apos;s working and what needs improvement. With our service, you can make data-driven decisions that improve your customer relationships. </p>
                             <button onClick={openContactModal} className='btn lg:btn-outline'>Learn More</button>
                         </div>
                     </div>
