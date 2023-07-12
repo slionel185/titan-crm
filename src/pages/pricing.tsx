@@ -6,7 +6,7 @@ import openContactModal from '@/functions/openContactModal'
 
 export default function Pricing() {
     return (
-        <div className='flex min-h-screen lg:h-screen flex-col bg-neutral-200'>
+        <div className='flex h-full lg:h-screen flex-col bg-neutral-200'>
             <Navbar />
             <div className='flex h-full flex-col lg:flex-row gap-8 justify-center items-center p-12'>
                 <div id='online' className='card w-full max-w-xs p-4 rounded-md bg-neutral-200 text-primary items-center gap-2'>

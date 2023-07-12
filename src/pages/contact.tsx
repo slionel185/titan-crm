@@ -5,10 +5,11 @@ export default function Contact() {
     return (
         <div className='min-h-screen flex flex-col'>
             <Navbar />
-            <div className='h-full hero bg-neutral-200'>
+            <div className='min-h-[80vh] hero bg-neutral-200'>
                 <div className='hero-content flex-col w-full'>
                     <div className='card rounded-md flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100'>
                         <div className='card-body'>
+                            <h1 className='text-center text-neutral-200 font-black uppercase text-3xl'>Contact</h1>
                             <div className='form-control'>
                                 <label className='label'>
                                     <span className='label-text'>Name</span>
